@@ -315,7 +315,9 @@ a{
 .head-wrapper .more-btn span{
     margin-right: 20px;
 }
-
+.benefits{
+    margin-bottom: 150px;
+}
 .benefits-card{
     background: #FFFFFF;
     border: 1px solid #F3F3F3;
@@ -368,7 +370,7 @@ a{
     border-radius: 20px;
 }
 .article-img-r img{
-    border-radius: 20px;
+    height: 300px;
 }
 .flag{
     position: absolute;
@@ -566,6 +568,7 @@ a{
 }
 .contacts{
     position: relative;
+    margin-bottom: 150px;
 }
 
 footer{
@@ -576,7 +579,7 @@ footer{
 }
 footer .absolute-svg{
     position: absolute;
-    top: 227px;
+    bottom: 0;
     right: 0;
 }
 .footer-wrapper{
@@ -637,7 +640,7 @@ footer .absolute-svg{
 .gray{
     color: lightgray !important;
 }
-.this-page span{
+.bread-crumbs span{
         font-weight: 500;
         font-size: 14px;
         line-height: 24px;
@@ -721,6 +724,9 @@ footer .absolute-svg{
     padding: 21px;
     background: #F2F2F2;
     justify-content: space-between;
+    border-radius: 20px;
+    margin-bottom: 30px;
+    display: flex;
 }
 .description ul{
     list-style-type: disc;
@@ -734,6 +740,7 @@ footer .absolute-svg{
 }
 .description img{
     margin-bottom: 119px;
+    border-radius: 20px;
 }
 .application{
     background-image: url("../images/application.png");
@@ -746,6 +753,7 @@ footer .absolute-svg{
 }
 .application-wrapper{
     width: 688px;
+    margin-bottom: 150px;
 }
 .application h3{
     font-weight: 700;
@@ -815,14 +823,21 @@ footer .absolute-svg{
 }
 .press-center-wrapper .article{
     margin-bottom: 60px;
+    height: 431px;
+    width: 380px;
+    background: none;
+    border: none;
+    box-shadow: none
 }
 .press-center-wrapper .article-news-txt{
     width: 380px;
-    top: 179px;
-    height: 237px;
+    bottom: 0;
+    height: 252px;
+    padding: 19px 30px 19px 15px;
 }
 .press-center-wrapper .article-img{
     width: 380px;
+    height: 300px;
 }
 .press-center-wrapper .article-txt h4{
  text-transform: none;
@@ -830,11 +845,18 @@ footer .absolute-svg{
 /* PRODUCT PAGE */
 
 /* MEDIA */
+.media-wrapper{
+    margin-bottom: 120px;
+}
 .media-img{
     display: flex;
     position: relative;
     align-items: center;
     justify-content: center;
+    margin-bottom: 30px;
+}
+.media-img img{
+    border-radius: 20px;
 }
 .play{
     position: absolute;
@@ -963,9 +985,11 @@ iframe{
     z-index: 9;
     position: absolute;
     top: 296px;
+    border-radius: 0px 90.5px;
 }
 .abot-img-2{
     margin-left: 136px;
+    border-radius: 0px 216.5px;
 }
 .about-txt{
     width: 497px;
