@@ -41,6 +41,9 @@ a{
     position: fixed;
     z-index: 999;
 }
+.header-bg{
+    background-color: #fff;
+}
 .main-nav-header{
     border: none;
     color: #fff;
@@ -244,14 +247,14 @@ a{
 .content-txt-block h3{
     font-weight: 700;
     font-size: 20px;
-    line-height: 170%;
+    line-height: 34px;
     text-transform: uppercase;
     color: #01312D;
     margin-bottom: 10px;
 }
 .content-txt-block p{
     font-weight: 500;
-    font-size: 14px;
+    font-size: 15px;
     line-height: 24px;
     color: #01312D;
     /* width: 497px; */
@@ -335,13 +338,21 @@ a{
     flex-direction: column;
     align-items: center;
     height: 311px;
-    justify-content: space-around;
     margin-bottom: 40px;
     padding: 20px;
 }
+.benefits-abstraction{
+    align-items: center;
+    justify-content: center;
+}
+.benefits-abstraction .benefits-svg{
+    height: auto !important;
+    width: auto !important;
+}
 .benefits-svg{
     width: 100%;
-    
+    margin-bottom: 16px;
+    height: 75px;
 }
 .benefits-card p{
     font-weight: 500;
@@ -361,7 +372,7 @@ a{
     height: 590px;
     border: 1px solid #F3F3F3;
     box-sizing: border-box;
-    width: 360px;
+    width: 100%;
     box-shadow: 0px 34px 39px rgb(0 0 0 / 5%);
     border-radius: 20px;
 }
@@ -373,8 +384,9 @@ a{
 }
 .article-img img{
     width: 100%;
-    height: 446px;
+    height: 100%;
     border-radius: 20px;
+    object-fit: cover;
 }
 .article-img-r img{
     height: 300px;
@@ -470,7 +482,7 @@ a{
     height: 636px;    
 }
 .vacansy-txt{
-    height: 542px;
+    /* height: 542px; */
 }
 .vacansy-txt-block .content-head{
     margin-bottom: 30px;
@@ -514,6 +526,7 @@ a{
     justify-content: center;
     margin-left: 30px;
     border-radius: 100%;
+    flex: 0 0 72px;
 }
 .socials{
     display: flex;
@@ -584,6 +597,9 @@ footer{
     padding-top: 97px;
     position: relative;
 }
+.logo{
+    margin-bottom: 30px;
+}
 footer .absolute-svg{
     position: absolute;
     bottom: 0;
@@ -618,6 +634,7 @@ footer .absolute-svg{
     font-size: 30px;
     line-height: 35px;
     color: #72BF01;
+    margin-bottom: 30px;
 }
 .footer-nav li{
     font-weight: 600;
@@ -940,6 +957,7 @@ footer .absolute-svg{
     border: none;
     border-radius: 15px;
     outline: none;
+    font-family: 'Raleway';
 }
 .contact-form textarea{
     height: 130px;
@@ -1301,8 +1319,7 @@ iframe{
         margin-bottom: 50px;
     }
     .vacansy-img{
-        width: 554px;
-        height: 615px;
+        display: none;
     }
     .content-wrapper .about-txt .content-head{
         margin-bottom: 20px;
@@ -1342,7 +1359,7 @@ iframe{
         height: 515px;
     }
     .article-img, .article-img img{
-        height: auto;
+        height: 300px;
     }
     .article-news-txt{
         height: 310px;
@@ -1390,9 +1407,6 @@ iframe{
         margin: 30px auto;
         width: 360px;
     }
-    .article-img, .article-img img{
-        height: auto;
-    }
     .article-news-txt{
         height: 245px;
     }
@@ -1410,15 +1424,24 @@ iframe{
         margin-bottom: 50px;
     }
     .main-header{
-        font-size: 36px;
+        font-size: 25px;
+        line-height: 40px;
+    }
+    .content-txt-block p{
+        margin-bottom: 15px;
+    }
+    .contacts-block{
+        flex-direction: column;
+        padding: 20px;
+        height: auto;
+    }
+    .scg-wrapper{
+        margin: 0 0 15px 0;
     }
 }
 
 @media (max-width:500px){
-    .article-img, .article-img img{
-        height: auto;
-        width: 100%;
-    }
+
     .article{
         width: auto;
     }
@@ -1443,5 +1466,18 @@ iframe{
     }
     .content-head{
         font-size: 28px;
+        margin-bottom: 25px;
+    }
+    .content-txt-block{
+        padding: 24px 15px;
+        height: auto;
+        border-radius: 20px;
+    }
+    .content-txt-block h3{
+        font-size: 18px;
+        line-height: 25px;
+    }
+    .social-icons{
+        margin-bottom: 30px;
     }
 }
