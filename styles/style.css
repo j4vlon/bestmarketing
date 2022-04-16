@@ -1050,7 +1050,10 @@ iframe{
     border-radius: 0px 216.5px;
 }
 .about-txt{
-   
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 .about-txt .content-head{
     margin-bottom: 30px;
@@ -1174,6 +1177,37 @@ iframe{
     .vacansy-paragraph{
         margin-bottom: 50px;
     }
+    .about-txt p{
+        width: auto;
+    }
+    .about-img{
+        height: 470px;
+    }
+    .about-img img{
+        height: 100%;
+        width: 100%;
+    }
+    .abot-content-img{
+        display: flex;
+        justify-content: end;
+        position: relative;
+    }
+    .abot-img-1{
+        top: 196px;
+        left: 0;
+    }
+    .about-txt{
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .valuation-img-block img{
+        width: 100%;
+    }
+    .content-wrapper{
+        height: auto;
+    }
 }
 
 @media(max-width:1200px){
@@ -1213,6 +1247,19 @@ iframe{
     }
     .service-txt-left .content-img-block{
         left: 46%;
+    }
+    .valuation-img-block img{
+        width: 100%;
+    }
+    .benefits-card{
+        height: 375px;
+    }
+    .content-wrapper{
+        margin-bottom: 100px;
+    }
+    .valuation-txt{
+        width: 458px;
+        padding: 30px 30px 30px 30px;
     }
 
 }
@@ -1257,6 +1304,24 @@ iframe{
         width: 554px;
         height: 615px;
     }
+    .content-wrapper .about-txt .content-head{
+        margin-bottom: 20px;
+    }
+    .about-img{
+        display: none;
+    }
+    .abot-content-img{
+        display: flex;
+        height: 100%;
+        align-items: center;
+    }
+    .abot-img-1{
+        display: none;
+    }
+    .abot-img-2{
+        margin-left: 0;
+        width: 100%;
+    }
 
 }
 
@@ -1298,6 +1363,18 @@ iframe{
     .vacansy-img{
         width: auto;
         height: auto;
+    }
+    .content-wrapper{
+        height: auto;
+    }
+    .valuation-wrapper{
+        margin-bottom: 0;
+    }
+    .valuation-block{
+        height: auto;
+    }
+    .valuation-txt{
+        margin-bottom: 30px;
     }
 }
 
