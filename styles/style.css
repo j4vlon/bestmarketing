@@ -384,7 +384,7 @@ a{
 
 .article-img{
     width: 100%;
-    height: 446px;
+    
     border-radius: 20px;
 }
 .article-img img{
@@ -738,6 +738,10 @@ footer .absolute-svg{
     align-items: center;
     justify-content: center;
 }
+.card-img img{
+    width: 100%;
+    height: 100%;
+}
 .category-name h3{
     font-weight: 700;
     font-size: 20px;
@@ -862,8 +866,6 @@ footer .absolute-svg{
     margin-bottom: 50px;
 }
 .section-item{
-    display: flex;
-    justify-content: space-between;
     margin-right: 112px;
 }
 .section-title{
@@ -889,20 +891,17 @@ footer .absolute-svg{
 .press-center-wrapper .article{
     margin-bottom: 60px;
     height: 431px;
-    width: 380px;
     background: none;
     border: none;
     box-shadow: none
 }
 .press-center-wrapper .article-news-txt{
-    width: 380px;
     bottom: 0;
     height: 252px;
     padding: 19px 30px 19px 15px;
 }
 .press-center-wrapper .article-img{
-    width: 380px;
-    height: 300px;
+
 }
 .press-center-wrapper .article-txt h4{
  text-transform: none;
@@ -1011,7 +1010,7 @@ iframe{
     margin-bottom: 14px;
 }
 .services-txt-block{
-    width: 360px;
+    /* width: 360px; */
     margin-bottom: 50px;
 }
 .services-txt-block h2{
@@ -1301,9 +1300,6 @@ iframe{
     .article-txt{
         padding: 15px;
     }
-    .absolute-svg{
-        top: 370px;
-    }
     .hero-txt{
         width: auto;
     }
@@ -1381,8 +1377,20 @@ iframe{
     .article-news-txt h4{
         font-size: 17px;
     }
-    .preparation-img{
-        
+    .application{
+        width: auto;
+        padding: 25px;
+        height: auto;
+    }
+    .application-wrapper{
+        width: auto;
+    }
+    .application-form{
+        flex-direction: column;
+        align-items: center;
+    }
+    .application-form input{
+        margin-bottom: 15px;
     }
     .vacansy-img{
         width: auto;
@@ -1399,6 +1407,15 @@ iframe{
     }
     .valuation-txt{
         margin-bottom: 30px;
+    }
+    .preparations-block{
+        margin-bottom: 50px;
+    }
+    .services-list{
+        margin-bottom: 80px;
+    }
+    .services-txt-block{
+        margin-bottom: 20px;
     }
 }
 
@@ -1444,6 +1461,27 @@ iframe{
     }
     .scg-wrapper{
         margin: 0 0 15px 0;
+    }
+    .form-btn-block{
+        flex-direction: column;
+        align-items: baseline;
+    }
+    .contact-form .submit-btn{
+        margin-bottom: 20px;
+    }
+    .socials{
+        align-items: center;
+    }
+    .rights .d-flex{
+        padding: 15px;
+        flex-direction: column;
+        height: auto;
+    }
+    .contact-txt h4{
+        text-align: center;
+    }
+    .article{
+        margin-bottom: 0;
     }
 }
 
