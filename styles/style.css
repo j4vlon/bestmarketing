@@ -171,7 +171,7 @@ a{
 }
 .content-wrapper{
     background: #F2F2F2;
-    margin-bottom: 200px;
+    margin-bottom: 84px;
     position: relative;
     display: flex;
     align-items: center;
@@ -344,6 +344,11 @@ a{
 .benefits-abstraction{
     align-items: center;
     justify-content: center;
+}
+.benefits-border{
+    border: none;
+    box-shadow: none;
+    background: none;
 }
 .benefits-abstraction .benefits-svg{
     height: auto !important;
@@ -583,9 +588,6 @@ a{
     line-height: 28px;
     color: #01312D;
 }
-.mb-20{
-    margin-bottom: 20px;
-}
 .contacts{
     position: relative;
     margin-bottom: 150px;
@@ -597,7 +599,7 @@ footer{
     padding-top: 97px;
     position: relative;
 }
-.logo{
+.footer-wrapper .logo{
     margin-bottom: 30px;
 }
 footer .absolute-svg{
@@ -614,6 +616,7 @@ footer .absolute-svg{
     line-height: 25px;
     color: #FFFFFF;
     width: 231px;
+    margin-bottom: 23px;
 }
 .social-icons{
     display: flex;
@@ -958,6 +961,7 @@ footer .absolute-svg{
     border-radius: 15px;
     outline: none;
     font-family: 'Raleway';
+    margin-bottom: 20px;
 }
 .contact-form textarea{
     height: 130px;
@@ -1016,6 +1020,9 @@ iframe{
     line-height: 136px;
     text-transform: uppercase;
     color: #72BF01;
+}
+.service-paragraph{
+    margin-bottom: 50px;
 }
 .services-txt-block p{
     font-weight: 500;
