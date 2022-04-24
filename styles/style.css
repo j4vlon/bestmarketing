@@ -374,8 +374,8 @@ a{
 .article{
     position: relative;
     background: #FFFFFF;
-    height: 590px;
     border: 1px solid #F3F3F3;
+    height: 741px;
     box-sizing: border-box;
     width: 100%;
     box-shadow: 0px 34px 39px rgb(0 0 0 / 5%);
@@ -1294,7 +1294,7 @@ iframe{
     }
     .article{
         margin-bottom: 35px;
-        height: 610px;
+        height: 632px;
         width: auto;
     }
     .article-txt{
