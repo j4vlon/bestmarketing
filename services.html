@@ -8,6 +8,7 @@
     <title>Услуги</title>
     <link rel="stylesheet" href="styles/bootstrap-grid.min.css">
     <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/hamburgers.css">
 </head>
 
 <body>
@@ -33,9 +34,14 @@
                         <path d="M83.8213 7.71411H94.3424V9.81821H86.2261V14.6741H93.6487V16.5935H86.2261V21.7962H94.5735V23.9004H83.8213V7.71411Z" fill="#01312D"/>
                         <path d="M98.1812 22.7444C97.0634 21.8193 96.5049 20.5707 96.5049 18.9983H98.9556C99.0022 19.9231 99.3526 20.6712 100.008 21.2414C100.663 21.8116 101.63 22.0969 102.91 22.0969C104.097 22.0969 104.999 21.854 105.615 21.3686C106.232 20.8831 106.54 20.2164 106.54 19.3681C106.54 18.6132 106.294 18.0351 105.8 17.6343C105.307 17.2335 104.59 16.9406 103.65 16.7553L101.453 16.316C98.4625 15.7306 96.9671 14.2737 96.9671 11.9458C96.9671 10.5585 97.4718 9.47169 98.4817 8.68549C99.4915 7.89936 100.891 7.5061 102.679 7.5061C104.482 7.5061 105.919 7.90706 106.991 8.70868C108.062 9.51008 108.598 10.6124 108.598 12.0151H106.147C106.132 11.2599 105.819 10.659 105.211 10.2114C104.602 9.76466 103.766 9.54098 102.702 9.54098C101.607 9.54098 100.794 9.77207 100.262 10.2346C99.7306 10.6972 99.4645 11.2831 99.4645 11.9919C99.4645 13.287 100.328 14.1041 102.054 14.4432L104.159 14.8593C105.808 15.183 107.037 15.6957 107.847 16.3968C108.656 17.0984 109.06 18.0813 109.06 19.3452C109.06 20.8868 108.506 22.0702 107.396 22.8945C106.286 23.7196 104.783 24.1317 102.887 24.1317C100.867 24.1317 99.2987 23.6692 98.1812 22.7444Z" fill="#01312D"/>
                         <path d="M115.155 9.81821H110.184V7.71411H122.531V9.81821H117.56V23.9004H115.155V9.81821Z" fill="#01312D"/>
-                    </svg>
+                    </svg>                        
                 </a>
             </div>
+            <button class="hamburger hamburger--collapse is-active" type="button" id="nav-btn">
+                <span class="hamburger-box">
+                  <span class="hamburger-inner"></span>
+                </span>
+            </button>
             <ul class="navigation-list">
                 <li class="nav-list-item">
                     <a href="about.html" class="nav-link">О нас</a>
@@ -55,10 +61,12 @@
                 <li class="nav-list-item">
                     <a href="contacts.html" class="nav-link">Контакты</a>
                 </li>
+                <li class="nav-list-item">
+                    <div class="call-block">
+                        <a href="#" class="call-link">Позвонить</a>
+                    </div>
+                </li>
             </ul>
-            <div class="call-block">
-                <a href="" class="call-link">Позвонить</a>
-            </div>
         </nav>
     </header>
     <div class="main">
@@ -453,5 +461,8 @@
         </div>
     </footer>
 </body>
+<script src="js/jquery-3.6.0.min.js"></script>
+<script src="js/aos.js"></script>
+<script src="js/script.js"></script>
 
 </html>

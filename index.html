@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="styles/style.css">
     <link rel="stylesheet" href="styles/bootstrap-grid.min.css">
     <link rel="stylesheet" href="styles/aos.css">
+    <link rel="stylesheet" href="styles/hamburgers.css">
 </head>
 
 <body>
@@ -92,6 +93,7 @@
             </div>
         </nav>
     </header>
+    
     <div class="main">
         <div class="hero-block">
             <div class="hero-blok-content container">
@@ -368,6 +370,8 @@
                                 <div class="article-txt">
                                     <span class="date">15.02.2022</span>
                                     <h4>основы фармацевтического бизнеса</h4>
+                                    <p class="article-news-p un-active">Кровяное или артериальное давление – это давление крови на стенки сосудов. Оно
+                                        определяется объемом крови, который выталкивает сердце...</p>
                                 </div>
                             </div>
                         </div>
@@ -382,7 +386,7 @@
                                 <div class="article-news-txt">
                                     <span class="date">15.02.2022</span>
                                     <h4>Нормы артериального давления в возрасте</h4>
-                                    <p>Кровяное или артериальное давление – это давление крови на стенки сосудов. Оно
+                                    <p class="article-news-p un-active">Кровяное или артериальное давление – это давление крови на стенки сосудов. Оно
                                         определяется объемом крови, который выталкивает сердце...</p>
                                 </div>
                             </div>
@@ -398,6 +402,8 @@
                                 <div class="article-txt">
                                     <span class="date">15.02.2022</span>
                                     <h4>Что такое БАДы и насколько они безопасны?</h4>
+                                    <p class="article-news-p un-active">Кровяное или артериальное давление – это давление крови на стенки сосудов. Оно
+                                        определяется объемом крови, который выталкивает сердце...</p>
                                 </div>
                             </div>
                         </div>
@@ -740,11 +746,24 @@
             </svg>
         </div>
     </footer>
+    <script src="js/jquery-3.6.0.min.js"></script>
     <script src="js/aos.js"></script>
+    <script src="js/script.js"></script>
     <script>
       AOS.init({
         easing: 'ease-in-out-sine'
       });
+            $(document).ready(function() {
+            $(window).scroll(function() {
+            if ($(document).scrollTop() > 200) {
+                $("header").addClass("header-bg");
+                $("header").removeClass("main-nav-header");
+            } else {
+                $("header").removeClass("header-bg");
+                $("header").addClass("main-nav-header");
+            }
+            });
+        });
     </script>
 </body>
 
