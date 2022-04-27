@@ -902,9 +902,11 @@ footer .absolute-svg{
     bottom: 0;
     height: 252px;
     padding: 19px 30px 19px 15px;
+    width: 100%;
 }
 .press-center-wrapper .article-img{
-
+    
+    height: 300px;
 }
 .press-center-wrapper .article-txt h4{
  text-transform: none;
