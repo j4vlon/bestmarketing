@@ -48,6 +48,7 @@ a{
 }
 .header-fix{
     border-bottom: 1px solid #01312D !important;
+    background-color: #fff !important;
 }
 .header-fix .nav-link{
     color: #01312D !important;
@@ -1198,15 +1199,18 @@ iframe{
 .content-wrapper-out{
     padding: 85px 0 62px 0;
 }
+.vacansy{
+    margin-bottom: 50px;
+}
 /* ABOUTUS */
 /* ACCORDION */
 .b-faq {
-	margin: 5px auto;
+    margin: 0px 0 25px 0;
 }
 .b-faq .faq__title {
 	position: relative;
 	display: block;
-	padding: 13px 60px 15px 13px;
+	padding: 20px;
 	color: #202020;
 	font-size: 28px;
 	text-decoration: none;
@@ -1215,9 +1219,19 @@ iframe{
 	-webkit-transition: background-color 0.2s;
 	transition: background-color 0.2s;
 }
+.active-v:after {
+    content: "\2796" !important; /* Unicode character for "minus" sign (-) */
+  }
+.b-faq .faq__title::after{
+    content: '\02795';
+    font-size: 20px;
+    color: #72BF01 !important;
+    float: right;
+}
+
 .b-faq .faq__title:hover {
 	
-	transition: all 0.5s ease-out;
+	transition: all 0.2s;
 }
 .b-faq .faq__active {
 	color: #72BF01;
@@ -1225,7 +1239,7 @@ iframe{
 }
 .b-faq .faq__title .faq__spoiler {
 	position: absolute;
-	top: 13px; right: 10px;
+    right: 10px;
 	display: inline-block;
 	vertical-align: middle;
 	width: 30px;
@@ -1245,11 +1259,47 @@ iframe{
 	transform: rotate(225deg);
 }
 .b-faq .faq__content {
-	padding: 30px;
+	padding: 0 20px 20px 20px;
 	margin-bottom: 2px;
 	font-size: 14px;
 	display: none;
 	background-color: #F6F6F6;
+    border-radius: 0px 0px 20px 20px;
+}
+.b-faq .faq__content h4{
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+    color: #01312D;
+    margin-bottom: 10px;
+}
+.b-faq .faq__content li,p{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    color: #01312D;
+    margin-bottom: 5px;
+}
+.vacansy-p{
+    margin-top: 15px;
+    margin-bottom: 30px;
+}
+.faq__content ul {
+    list-style-type: inherit;
+    padding-left: 30px;
+    margin-bottom: 30px;
+}
+.vacansy-ul-wrapper ul{
+    margin-bottom: 0;
+}
+.vacansy-contact{
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 27px;
+    color: #01312D;
+}
+.vacansy-contact a{
+    color: dodgerblue;
 }
 .b-faq .faq__symbol {
 	font-weight: 700;
