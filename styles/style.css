@@ -27,6 +27,7 @@ body{
     font-family: "Raleway";
     font-weight: 500;
     margin: 0;
+    overflow-x: hidden;
 }
 ul{
     list-style-type: none;
@@ -43,6 +44,13 @@ a{
 }
 .header-bg{
     background-color: #fff;
+    border-bottom: 1px solid #01312D;
+}
+.header-fix{
+    border-bottom: 1px solid #01312D !important;
+}
+.header-fix .nav-link{
+    color: #01312D !important;
 }
 .main-nav-header{
     border: none;
@@ -383,6 +391,22 @@ a{
     width: 100%;
     box-shadow: 0px 34px 39px rgb(0 0 0 / 5%);
     border-radius: 20px;
+    overflow: hidden;
+}
+
+.article:hover .article-txt {
+    position: absolute;
+    bottom: 0;
+    height: 275px;
+    width: 100%;
+    color: white;
+    background: #72BF01;
+    padding: 30px 15px;
+    border-radius: 0px 0px 20px 20px;
+}
+
+.article:hover h4 {
+    color: #fff;
 }
 
 .article-img{
@@ -650,6 +674,8 @@ footer .absolute-svg{
     margin-bottom: 16px;
 }
 .rights{
+    position: relative;
+    z-index: 2;
     background: #000000;
 }
 .rights .d-flex{
